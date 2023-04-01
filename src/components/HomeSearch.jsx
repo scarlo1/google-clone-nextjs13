@@ -20,7 +20,7 @@ export default function HomeSearch() {
       .then((data) => data[0]);
     if (!response) return;
     router.push(`/search/web?searchTerm=${response}`);
-    setRandomSearchLoading(true);
+    setRandomSearchLoading(false);
   }
   return (
     <>
